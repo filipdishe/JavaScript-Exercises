@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100rem;
+  margin: 0 auto;
+}
+
+.heading-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 5.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: green;
+}
+
+.input-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.note-label {
+  font-size: 2.4rem;
+}
+
+#textarea {
+  width: 100%;
+  height: 8rem;
+  pointer-events: auto;
+}
+
+#textarea::placeholder {
+  font-size: 1.6rem;
+}
+
+.button-box {
+  display: flex;
+  place-content: center;
+}
+
+.btn {
+  font-size: 1.6rem;
+  align-self: center;
+  color: #fff;
+  background-color: #669900;
+  margin-bottom: 5rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1.6rem;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.btn:active {
+  color: #555;
+}
+
+.notes-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.note-box {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 2rem;
+}
+
+.note-heading {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.note-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.note-box button {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+/* Styling the modal window */
+.modal-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: #fff;
+  width: 60%;
+  padding: 4rem 10rem;
+  position: relative;
+}
+
+.modal-heading {
+  font-size: 3.6rem;
+  color: green;
+  margin-bottom: 1rem;
+}
+
+.modal-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}

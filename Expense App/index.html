@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-box">
+        <div class="heading-box">
+          <h1 class="heading">Expense Tracker</h1>
+          <p class="heading-secondary">Add a new item:</p>
+        </div>
+        <form class="form" action="">
+          <div class="name-input-box">
+            <label for="name">Name:</label>
+            <input
+              class="input-name"
+              type="text"
+              placeholder="Where was the expense made?"
+            /><br />
+          </div>
+          <div class="date-amount-input-box">
+            <label for="date">Date:</label>
+            <input class="input-date" type="date" placeholder="dd/mm/year" />
+            <label for="amount">Amount:</label>
+            <input class="input-amount" type="text" />
+          </div>
+        </form>
+        <button class="btn">Add Expense</button>
+      </div>
+    </div>
+    <div class="table-container">
+      <table class="table">
+        <thead class="thead">
+          <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Country</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr class="no-expenses-tr">
+            <td class="no-expenses-td" colspan="4">No expenses added yet!</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading-box">
+        <h1 class="heading">Note Taker</h1>
+        <p class="heading-secondary">Add a New Note:</p>
+      </div>
+      <div class="add-note-box">
+        <div class="input-box">
+          <label class="note-label" for="note">Note:</label>
+          <textarea
+            class="input-textarea"
+            name="note"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Write your note here.."
+          ></textarea>
+        </div>
+        <div class="button-box">
+          <button class="btn btn-add">Add Note</button>
+        </div>
+      </div>
+      <div class="notes-box"></div>
+    </div>
+    <div class="modal-container">
+      <div class="modal">
+        <button class="close-modal">X</button>
+        <h1 class="modal-heading">Full Note:</h1>
+        <p class="modal-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ratione
+          possimus iste labore. Totam doloremque enim accusamus vero, non culpa
+          molestiae, impedit corporis dolorum neque aliquid illum. Odit, nam
+          corrupti.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

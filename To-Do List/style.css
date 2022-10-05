@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  place-content: center;
+}
+
+.component {
+  margin-top: 4rem;
+  display: flex;
+  place-content: center;
+  width: 50rem;
+  padding: 3.5rem 5rem;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.heading-1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.input {
+  padding: 3px;
+}
+
+.btn {
+  padding: 3px;
+}
+
+.todo-list li {
+  /* list-style: none; */
+  font-size: 2.4rem;
+}

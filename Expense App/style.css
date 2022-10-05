@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container,
+.table-container {
+  max-width: 144rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  place-content: center;
+}
+
+.app-box {
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.heading {
+  font-size: 5.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: green;
+}
+
+.form {
+  margin-bottom: 2rem;
+}
+
+.form label {
+  font-size: 2rem;
+}
+
+.form input {
+  padding: 3px;
+  width: 100%;
+}
+
+.form label[for='name'] {
+  margin-right: 1rem;
+}
+
+.name-input-box {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.date-amount-input-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  align-self: center;
+  color: #fff;
+  background-color: #669900;
+  margin-bottom: 5rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.btn:active {
+  color: #555;
+}
+
+/* TABLES WILL BE GENERATED WITH JS */
+.table {
+  font-size: 2rem;
+  border-collapse: collapse;
+  /* margin: 25px 0; */
+}
+
+.table thead th {
+  color: #333;
+  width: 18rem;
+  text-align: left;
+  border: 1px solid #c7c7c7;
+  padding: 1rem;
+}
+
+.table tbody td {
+  background-color: #ededed;
+  text-align: left;
+
+  padding: 1.5rem;
+}
+
+.table tbody tr {
+  border: 1px solid #c7c7c7;
+}
